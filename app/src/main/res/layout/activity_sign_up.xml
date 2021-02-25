@@ -16,39 +16,54 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/signUpName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="200dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/montserrat"
+        android:hint="Name"
+        android:paddingStart="20dp"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/montserrat"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="@color/colorBlack"
-        android:fontFamily="@"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Name"
+        android:paddingStart="20dp"
         android:textColor="@color/colorBlack" />
 
     <EditText
+        android:id="@+id/signUpPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/montserrat"
         android:hint="Password"
         android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
         android:textColor="@color/colorBlack" />
 
     <EditText
+        android:id="@+id/signUpRepeatPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/montserrat"
         android:hint="Repeat password"
         android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
         android:textColor="@color/colorBlack" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/signUpToMain"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
@@ -59,15 +74,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:text="Sign Up"
             android:textColor="@color/colorWhite" />
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/toSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="Already have an account?" />
 

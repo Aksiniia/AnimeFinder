@@ -16,46 +16,54 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/signInEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="200dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/montserrat"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
         android:textColor="@color/colorBlack" />
 
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/signInPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/montserrat"
         android:hint="Password"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
         android:textColor="@color/colorBlack" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/signInToSignUp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="200dp"
         android:backgroundTint="@color/colorBlack"
-        app:cardCornerRadius="40dp"
-        android:onClick="signInToSignUp">
+        app:cardCornerRadius="40dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
             android:text="Sign In"
             android:textColor="@color/colorWhite" />
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:onClick="toSignUp"
+        android:id="@+id/toSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="Don’t have an account yet?" />
 
